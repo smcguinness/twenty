@@ -14,7 +14,7 @@ services:
   name: server
   env: docker
   dockerfilePath: ./packages/twenty-docker/prod/twenty-server/Dockerfile
-  dockerCommand: "sh -c ./packages/twenty-server/scripts/render-run.sh"
+  dockerCommand: "sh -c ./scripts/render-run.sh"
   autoDeploy: false
   envVars:
     - key: FRONT_BASE_URL
